@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPACED - To Space and Back, Safely</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <span class="nav-logo">🚀</span>
+                    <span class="nav-title">SPACED</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#detection" class="nav-link">Live Detection</a>
+                    <a href="#destinations" class="nav-link">Destinations</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="#booking" class="nav-link">Book Trip</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="btn btn--outline btn--sm">Login</button>
+                    <button class="btn btn--primary btn--sm">Join</button>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="stars"></div>
+            <div class="planets">
+                <div class="planet planet-1"></div>
+                <div class="planet planet-2"></div>
+                <div class="planet planet-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">To space</span>
+                        <span class="title-line">and back,</span>
+                        <span class="title-line highlight">safely.</span>
+                    </h1>
+                    <p class="hero-description">
+                        Experience the ultimate journey beyond Earth's atmosphere with our state-of-the-art 
+                        spacecraft and AI-powered safety systems. Your adventure awaits among the stars.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn btn--primary btn--lg cta-btn" id="ctaBtn">Book Your Journey</button>
+                        <button class="btn btn--outline btn--lg demo-btn" id="demoBtn">Try Detection</button>
+                    </div>
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">💰</span>
+                            <span>Competitive Pricing</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🛡️</span>
+                            <span>Full Risk Protection</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🚀</span>
+                            <span>Zero Risk Policy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="astronaut-container">
+                        <div class="astronaut">🧑‍🚀</div>
+                        <div class="detection-preview">
+                            <div class="preview-screen">
+                                <div class="scan-line"></div>
+                                <div class="detection-indicator active">
+                                    <span class="indicator-icon">🛡️</span>
+                                    <span class="indicator-text">Safety Systems: Online</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About SPACED</h2>
+                <p class="section-subtitle">Leading the future of space travel with AI-powered safety systems</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Your Gateway to the Stars</h3>
+                    <p>SPACED is a pioneering space travel company providing the ultimate experience for outer space travel. 
+                    Our cutting-edge technology combines traditional aerospace engineering with advanced AI detection systems 
+                    to ensure the highest levels of safety and comfort.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Safety Record</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Successful Missions</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">AI Monitoring</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="tech-grid">
+                        <div class="tech-card">
+                            <span class="tech-icon">🤖</span>
+                            <h4>AI Detection</h4>
+                            <p>Advanced object recognition</p>
+                        </div>
+                        <div class="tech-card">
+                            <span class="tech-icon">🛰️</span>
+                            <h4>Space Tech</h4>
+                            <p>Next-gen propulsion systems</p>
+                        </div>
+                        <div class="tech-card">
+                            <span class="tech-icon">🔬</span>
+                            <h4>Research</h4>
+                            <p>Continuous innovation</p>
+                        </div>
+                        <div class="tech-card">
+                            <span class="tech-icon">🌍</span>
+                            <h4>Sustainability</h4>
+                            <p>Eco-friendly space travel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Detection Section -->
+    <section id="detection" class="detection-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Live Object Detection</h2>
+                <p class="section-subtitle">Experience our AI-powered safety monitoring system in real-time</p>
+            </div>
+            
+            <div class="detection-interface">
+                <div class="detection-controls">
+                    <div class="control-group">
+                        <button class="btn btn--primary" id="startCameraBtn">
+                            <span class="btn-icon">📹</span>
+                            Start Camera
+                        </button>
+                        <button class="btn btn--outline" id="uploadImageBtn">
+                            <span class="btn-icon">📤</span>
+                            Upload Image
+                        </button>
+                    </div>
+                    <div class="control-group">
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="audioToggle" checked>
+                            <span class="toggle-slider"></span>
+                            <span class="toggle-label">Sound Alerts</span>
+                        </label>
+                        <button class="btn btn--secondary btn--sm" id="fullscreenBtn">
+                            <span class="btn-icon">⛶</span>
+                            Fullscreen
+                        </button>
+                    </div>
+                </div>
+
+                <div class="detection-display">
+                    <div class="camera-container" id="cameraContainer">
+                        <video id="cameraVideo" autoplay muted playsinline style="display: none;"></video>
+                        <canvas id="detectionCanvas" style="display: none;"></canvas>
+                        <div class="camera-overlay">
+                            <div class="scan-animation"></div>
+                            <div class="detection-stats" id="detectionStats">
+                                <div class="stat">
+                                    <span class="stat-label">Objects:</span>
+                                    <span class="stat-value" id="objectCount">0</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Confidence:</span>
+                                    <span class="stat-value" id="avgConfidence">0%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="camera-placeholder" id="cameraPlaceholder">
+                            <div class="placeholder-content">
+                                <div class="placeholder-icon">📹</div>
+                                <h3>Camera Ready</h3>
+                                <p>Click "Start Camera" to begin live object detection</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="detection-sidebar">
+                        <div class="detection-classes">
+                            <h4>Detection Classes</h4>
+                            <div class="class-grid" id="classGrid">
+                                <!-- Detection classes will be populated here -->
+                            </div>
+                        </div>
+                        
+                        <div class="detection-history">
+                            <h4>Recent Detections</h4>
+                            <div class="history-list" id="historyList">
+                                <div class="history-empty">
+                                    <span class="empty-icon">🔍</span>
+                                    <p>No detections yet</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Choose Your Destination</h2>
+                <p class="section-subtitle">Explore the wonders of our solar system</p>
+            </div>
+            <div class="destinations-grid">
+                <div class="destination-card" data-destination="earth">
+                    <div class="destination-visual">
+                        <div class="planet-icon earth-icon">🌍</div>
+                        <div class="destination-overlay">
+                            <button class="btn btn--primary">Explore Earth</button>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Earth Orbit</h3>
+                        <p>Experience the breathtaking view of our beautiful home planet from space.</p>
+                        <div class="destination-price">Starting at $0</div>
+                    </div>
+                </div>
+                
+                <div class="destination-card" data-destination="moon">
+                    <div class="destination-visual">
+                        <div class="planet-icon moon-icon">🌙</div>
+                        <div class="destination-overlay">
+                            <button class="btn btn--primary">Explore Moon</button>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Lunar Surface</h3>
+                        <p>Walk on Earth's natural satellite and witness the ultimate frontier.</p>
+                        <div class="destination-price">Starting at $50M</div>
+                    </div>
+                </div>
+                
+                <div class="destination-card" data-destination="mars">
+                    <div class="destination-visual">
+                        <div class="planet-icon mars-icon">🔴</div>
+                        <div class="destination-overlay">
+                            <button class="btn btn--primary">Explore Mars</button>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <h3>The Red Planet</h3>
+                        <p>Pioneer the future of humanity on the mysterious red planet Mars.</p>
+                        <div class="destination-price">Starting at $100M</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mission Packages</h2>
+                <p class="section-subtitle">Choose the perfect space adventure for your journey</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Suborbital</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">$250,000</span>
+                            <span class="price-period">per person</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>✓ 15 minutes in space</li>
+                            <li>✓ Zero gravity experience</li>
+                            <li>✓ Earth curvature views</li>
+                            <li>✓ Professional crew</li>
+                            <li>✓ Safety certification</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn--outline btn--full-width pricing-select" data-mission="suborbital">Choose Suborbital</button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Orbital</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">$55M</span>
+                            <span class="price-period">per person</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>✓ 3 days in orbit</li>
+                            <li>✓ Space station docking</li>
+                            <li>✓ Scientific experiments</li>
+                            <li>✓ Earth photography</li>
+                            <li>✓ Luxury accommodations</li>
+                            <li>✓ Extended training program</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn--primary btn--full-width pricing-select" data-mission="orbital">Choose Orbital</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Lunar</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">$150M</span>
+                            <span class="price-period">per person</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>✓ 8 days total mission</li>
+                            <li>✓ Moon surface landing</li>
+                            <li>✓ Lunar exploration</li>
+                            <li>✓ Sample collection</li>
+                            <li>✓ Historic achievement</li>
+                            <li>✓ Comprehensive training</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn--outline btn--full-width pricing-select" data-mission="lunar">Choose Lunar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Book Your Space Journey</h2>
+                <p class="section-subtitle">Ready to embark on the adventure of a lifetime?</p>
+            </div>
+            <div class="booking-form-container">
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label" for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="lastName">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="phone">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="mission">Mission Type</label>
+                            <select class="form-control" id="mission" name="mission" required>
+                                <option value="">Select a mission</option>
+                                <option value="suborbital">Suborbital - $250,000</option>
+                                <option value="orbital">Orbital - $55M</option>
+                                <option value="lunar">Lunar - $150M</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="date">Preferred Launch Date</label>
+                            <input type="date" class="form-control" id="date" name="date" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="message">Additional Requirements</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tell us about any special requirements or questions..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--lg btn--full-width">
+                        <span class="btn-icon">🚀</span>
+                        Reserve My Seat
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know about space travel with SPACED</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button type="button" class="faq-question">
+                        <span>What safety measures are in place?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our AI-powered detection system continuously monitors all safety equipment and environmental conditions. We maintain a 100% safety record with comprehensive risk assessment and backup systems.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button type="button" class="faq-question">
+                        <span>How long is the training program?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Training duration varies by mission type: Suborbital requires 3 days, Orbital needs 6 months, and Lunar missions require 12 months of comprehensive preparation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button type="button" class="faq-question">
+                        <span>What is included in the mission price?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>All missions include full training, medical evaluations, space suit, meals, accommodation, insurance, and certification. No hidden fees or additional costs.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button type="button" class="faq-question">
+                        <span>Can I cancel or reschedule my mission?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we offer flexible rescheduling up to 30 days before launch. Cancellations are subject to our terms and conditions with partial refunds available.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="nav-logo">🚀</span>
+                        <span class="nav-title">SPACED</span>
+                    </div>
+                    <p class="footer-tagline">To space and back, safely.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <a href="#about">About Us</a>
+                        <a href="#careers">Careers</a>
+                        <a href="#news">News</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Missions</h4>
+                        <a href="#destinations">Destinations</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#booking">Book Now</a>
+                        <a href="#safety">Safety</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Technology</h4>
+                        <a href="#detection">AI Detection</a>
+                        <a href="#spacecraft">Spacecraft</a>
+                        <a href="#innovation">Innovation</a>
+                        <a href="#research">Research</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SPACED. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
